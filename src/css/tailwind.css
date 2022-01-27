@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card {
+    @apply w-48 h-64 shadow-md rounded-lg flex-none shrink-0 snap-center transform transition-all hover:-translate-y-3 hover:shadow-xl;
+}
+/* 
+.card:nth-child(odd) {
+    @apply bg-secondary text-white dark:bg-gray-700;
+}
+
+.card:nth-child(even) {
+    @apply bg-white text-tertiary dark:bg-gray-800 dark:text-gray-300;;
+} */
+
+.card-header {
+    @apply w-full h-3/5 rounded-t-lg bg-cover;
+}
+
+.card-content {
+    @apply w-full h-2/5 px-3 py-2 rounded-b-lg;
+}
+
+.text-subtitle {
+    @apply text-3xl font-semibold text-primary dark:text-white;
+}
+
+.card-title {
+    @apply text-3xl px-8 pt-8 pb-1 font-semibold;
+}
+
+.card-info {
+   @apply w-full h-96 bg-cover rounded-xl text-white;
+}
